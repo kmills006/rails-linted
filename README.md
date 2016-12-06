@@ -1,5 +1,5 @@
 # Rails Linted
-This is an example Rails project set up with [RuboCop](https://github.com/bbatsov/rubocop) and Travis CI
+This is an example Rails project set up with [RuboCop](https://github.com/bbatsov/rubocop), [rspec-rails](http://rspec.info/) and [Travis CI](https://travis-ci.org/).
 
 ## Instructions
 
@@ -22,11 +22,22 @@ This is an example Rails project set up with [RuboCop](https://github.com/bbatso
 
 3. Add RuboCop to Gemfile development group
   ```
-    # Code analyzer to enforce community style guide
-    gem 'rubocop', require: false
+  # Code analyzer to enforce community style guide
+  gem 'rubocop', require: false
   ```
 
-4. Create `.travis.yml`
+4. Add rspec to Gemfile development and test group
+  ```
+  # rspec testing framework
+  gem 'rspec-rails', '~> 3.5'
+  ```
+
+5. Initialize the spec/ directory
+  ```
+  rails generate rspec:install
+  ```
+
+6. Create `.travis.yml`
   ```
   rvm:
     - 2.3.0
@@ -36,6 +47,8 @@ This is an example Rails project set up with [RuboCop](https://github.com/bbatso
     - bundle exec rspec spec/
     - rubocop
   ```
+
+7. Enable your repo in Travis CI settings (Note if adding to a private repo, use [https://travis-ci.com/](https://travis-ci.com/))
 
 ## Commands
 
