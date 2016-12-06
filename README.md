@@ -1,24 +1,28 @@
-# README
+# Rails Linted
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is an example Rails project set up with [RuboCop](https://github.com/bbatsov/rubocop) and Travis CI
 
-Things you may want to cover:
+## Instructions
 
-* Ruby version
+1. Create new rails project
+```
+cd ~/code
+mkdir my-awesome-rails-project
+cd my-awesome-rails-project
+rails new .
+```
 
-* System dependencies
+2. Add Git remote and push initial commit
+```
+git init
+git remote add origin [git remote url]
+git add .
+git commit -m "Initial Commit"
+git push origin master
+```
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+3. Add RuboCop to Gemfile development group
+```
+  # Code analyzer to enforce community style guide
+  gem 'rubocop', require: false
+```
