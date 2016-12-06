@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/kmills006/rails-linted.svg?branch=master)](https://travis-ci.org/kmills006/rails-linted)
+
 # Rails Linted
 This is an example Rails project set up with [RuboCop](https://github.com/bbatsov/rubocop), [rspec-rails](http://rspec.info/) and [Travis CI](https://travis-ci.org/).
 
