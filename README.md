@@ -34,12 +34,17 @@ This is an example Rails project set up with [RuboCop](https://github.com/bbatso
   gem 'rspec-rails', '~> 3.5'
   ```
 
-5. Initialize the spec/ directory
+5. Run bundle install
+  ```
+  bundle install
+  ```
+
+6. Initialize the spec/ directory
   ```
   rails generate rspec:install
   ```
 
-6. Create `.travis.yml`
+7. Create `.travis.yml`
   ```
   rvm:
     - 2.3.0
@@ -50,7 +55,7 @@ This is an example Rails project set up with [RuboCop](https://github.com/bbatso
     - rubocop
   ```
 
-7. Enable your repo in Travis CI settings (Note if adding to a private repo, use [https://travis-ci.com/](https://travis-ci.com/))
+8. Enable your repo in Travis CI settings (Note if adding to a private repo, use [https://travis-ci.com/](https://travis-ci.com/))
 
 ## Commands
 
